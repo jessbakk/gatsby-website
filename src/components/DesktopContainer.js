@@ -35,25 +35,20 @@ class DesktopContainer extends Component {
             vertical
           >
             <Menu
-              fixed={fixed ? 'top' : null}
+              fixed={'top'}
               inverted={!fixed}
               pointing={!fixed}
               secondary={!fixed}
               size='large'
             >
               <Container>
-                <Menu.Item as='a' active>
-                  Home
-                </Menu.Item>
-                <Menu.Item as='a'>Work</Menu.Item>
-                <Menu.Item as='a'>Company</Menu.Item>
-                <Menu.Item as='a'>Careers</Menu.Item>
+                <Menu.Item as='a' active>Investing With Us</Menu.Item>
+                <Menu.Item as='a'>Properties</Menu.Item>
+                <Menu.Item as='a'>Investment Criteria</Menu.Item>
+                <Menu.Item as='a'>FAQ</Menu.Item>
                 <Menu.Item position='right'>
-                  <Button as='a' inverted={!fixed}>
-                    Log in
-                  </Button>
                   <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
-                    Sign Up
+                    Contact
                   </Button>
                 </Menu.Item>
               </Container>
