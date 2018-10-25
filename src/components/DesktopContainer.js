@@ -20,15 +20,14 @@ class DesktopContainer extends Component {
         <Segment
           inverted
           textAlign='center'
-          style={{ minHeight: 700, padding: '1em 0em', backgroundImage: `url(${Background})`, backgroundSize: 'cover', backgroundPosition: 'center center' }}
+          style={{ minHeight: 700, padding: '1em 0em', backgroundImage: `url(${Background})`, backgroundSize: 'cover', backgroundPosition: 'center center', backgroundAttachment: 'fixed' }}
           vertical
         >
           <Menu
-            style={{backgroundColor: 'rgba(0,0,0,.8)'}}
+            style={{backgroundColor: 'rgba(255,255,255,.9)'}}
             fixed={'top'}
             size='large'
             borderless
-            inverted
           >
             <Container>
               <Menu.Item><Icon size='large' name='building outline'/></Menu.Item>
