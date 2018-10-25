@@ -31,11 +31,8 @@ class MobileContainer extends Component {
     return (
       <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
         <Sidebar.Pushable>
-          <Sidebar as={Menu} animation='uncover' inverted vertical visible={sidebarOpened}>
-            <Menu.Item as='a' active>
-              Home
-            </Menu.Item>
-            <Menu.Item as='a'>Investing With Us</Menu.Item>
+          <Sidebar as={Menu} animation='overlay' inverted vertical visible={sidebarOpened}>
+            <Menu.Item as='a' active>Investing With Us</Menu.Item>
             <Menu.Item as='a'>Properties</Menu.Item>
             <Menu.Item as='a'>Investment Criteria</Menu.Item>
             <Menu.Item as='a'>FAQ</Menu.Item>
