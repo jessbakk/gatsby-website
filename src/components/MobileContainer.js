@@ -37,7 +37,7 @@ class MobileContainer extends Component {
             </Menu.Item>
             <Menu.Item as='a'>Investing With Us</Menu.Item>
             <Menu.Item as='a'>Properties</Menu.Item>
-            <Menu.Item as='a'>Ivestment Criteria</Menu.Item>
+            <Menu.Item as='a'>Investment Criteria</Menu.Item>
             <Menu.Item as='a'>FAQ</Menu.Item>
             <Menu.Item as='a'>Contact</Menu.Item>
           </Sidebar>

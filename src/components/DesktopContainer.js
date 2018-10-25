@@ -2,9 +2,11 @@ import React from 'react'
 import { Component } from 'react'
 import PropTypes from 'prop-types'
 import HomepageHeading from './HomepageHeading'
+import Background from '../images/Manhattan-Beach-Pier.jpg'
 import {
   Button,
   Container,
+  Icon,
   Menu,
   Responsive,
   Segment,
@@ -31,17 +33,19 @@ class DesktopContainer extends Component {
           <Segment
             inverted
             textAlign='center'
-            style={{ minHeight: 700, padding: '1em 0em' }}
+            style={{ minHeight: 700, padding: '1em 0em', backgroundImage: `url(${Background})`, backgroundSize: 'cover', backgroundPosition: 'center center' }}
             vertical
           >
             <Menu
-              fixed={'top'}
-              inverted={!fixed}
+              fixed={fixed ? 'top' : null}
+              inverted={fixed}
               pointing={!fixed}
               secondary={!fixed}
               size='large'
+              borderless
             >
               <Container>
+                <Menu.Item><Icon size='large' name='building outline'/></Menu.Item>
                 <Menu.Item as='a' active>Investing With Us</Menu.Item>
                 <Menu.Item as='a'>Properties</Menu.Item>
                 <Menu.Item as='a'>Investment Criteria</Menu.Item>
