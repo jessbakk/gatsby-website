@@ -20,7 +20,7 @@ class DesktopContainer extends Component {
         <Segment
           inverted
           textAlign='center'
-          style={{ minHeight: 700, padding: '1em 0em', backgroundImage: `url(${Background})`, backgroundSize: 'cover', backgroundPosition: 'center center', backgroundAttachment: 'fixed' }}
+          style={{ minHeight: '100vh', padding: '1em 0em', backgroundImage: `url(${Background})`, backgroundSize: 'cover', backgroundPosition: 'center center', backgroundAttachment: 'fixed' }}
           vertical
         >
           <Menu
