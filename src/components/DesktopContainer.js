@@ -1,6 +1,8 @@
 import React from 'react'
 import { Component } from 'react'
 import PropTypes from 'prop-types'
+import * as Scroll from 'react-scroll'
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import HomepageHeading from './HomepageHeading'
 import Background from '../images/Manhattan-Beach-Pier.jpg'
 import {
@@ -31,7 +33,7 @@ class DesktopContainer extends Component {
           >
             <Container>
               <Menu.Item><Icon size='large' name='building outline'/></Menu.Item>
-              <Menu.Item as='a' active>Investing With Us</Menu.Item>
+              <Menu.Item><Link activeClass="active" to="test1" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>Investing With Us</Link></Menu.Item>
               <Menu.Item as='a'>Properties</Menu.Item>
               <Menu.Item as='a'>Investment Criteria</Menu.Item>
               <Menu.Item as='a'>FAQ</Menu.Item>

@@ -1,4 +1,6 @@
 import React from 'react'
+import * as Scroll from 'react-scroll'
+import { Element } from 'react-scroll'
 import 'semantic-ui-css/semantic.min.css'
 import ResponsiveContainer from '../components/ResponsiveContainer'
 import {
@@ -46,6 +48,7 @@ const HomepageLayout = () => (
     </Segment>
 
     <Segment style={{ minHeight: '100vh', padding: '0em' }} vertical>
+      <Element name="test1" className="element">
       <Grid celled='internally' columns='equal' stackable>
         <Grid.Row textAlign='center'>
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
@@ -65,6 +68,7 @@ const HomepageLayout = () => (
           </Grid.Column>
         </Grid.Row>
       </Grid>
+      </Element>
     </Segment>
 
     <Segment style={{ minHeight: '100vh', padding: '8em 0em' }} vertical>
