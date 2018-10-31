@@ -1,8 +1,7 @@
 import React from 'react'
 import { Component } from 'react'
 import PropTypes from 'prop-types'
-import * as Scroll from 'react-scroll'
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link } from 'react-scroll'
 import HomepageHeading from './HomepageHeading'
 import Background from '../images/Manhattan-Beach-Pier.jpg'
 import {
