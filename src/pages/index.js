@@ -15,7 +15,7 @@ import {
 const HomepageLayout = () => (
   <ResponsiveContainer>
     
-    <Segment style={{ minHeight: '100vh', padding: '8em 0em' }} vertical>
+    <Segment style={{ minHeight: '100vh', padding: '0em 0em' }} vertical>
       <Element name="investing" className="element">
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>

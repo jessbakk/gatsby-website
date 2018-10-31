@@ -12,6 +12,7 @@ import {
   Responsive,
   Segment,
 } from 'semantic-ui-react'
+import './DesktopContainer.module.css'
 
 class DesktopContainer extends Component {
   constructor(props) {
