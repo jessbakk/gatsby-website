@@ -1,7 +1,7 @@
 import React from 'react'
 import { Component } from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'react-scroll'
+import { Link, animateScroll } from 'react-scroll'
 import HomepageHeading from './HomepageHeading'
 import Background from '../images/Manhattan-Beach-Pier.jpg'
 import {
@@ -14,6 +14,16 @@ import {
 } from 'semantic-ui-react'
 
 class DesktopContainer extends Component {
+  constructor(props) {
+    super(props);
+    this.scrollToTop = this.scrollToTop.bind(this);
+  }
+
+  scrollToTop() {
+    animateScroll.scrollToTop();
+  }
+
+
   render() {
     const { children } = this.props
     return (
@@ -31,11 +41,11 @@ class DesktopContainer extends Component {
             borderless
           >
             <Container>
-              <Menu.Item><Icon size='large' name='building outline'/></Menu.Item>
-              <Menu.Item><Link activeClass="active" to="test1" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>Investing With Us</Link></Menu.Item>
-              <Menu.Item as='a'>Properties</Menu.Item>
-              <Menu.Item as='a'>Investment Criteria</Menu.Item>
-              <Menu.Item as='a'>FAQ</Menu.Item>
+              <Menu.Item><Icon onClick={this.scrollToTop} size='large' name='building outline'/></Menu.Item>
+              <Menu.Item><Link activeClass="active" to="investing" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>Investing With Us</Link></Menu.Item>
+              <Menu.Item><Link activeClass="active" to="properties" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>Properties</Link></Menu.Item>
+              <Menu.Item><Link activeClass="active" to="criteria" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>Investment Criteria</Link></Menu.Item>
+              <Menu.Item><Link activeClass="active" to="faq" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>FAQ</Link></Menu.Item>
               <Menu.Item position='right'>
                 <Button as='a' style={{ marginLeft: '0.5em' }}>
                   Contact

@@ -1,5 +1,4 @@
 import React from 'react'
-import * as Scroll from 'react-scroll'
 import { Element } from 'react-scroll'
 import 'semantic-ui-css/semantic.min.css'
 import ResponsiveContainer from '../components/ResponsiveContainer'
@@ -16,7 +15,9 @@ import {
 
 const HomepageLayout = () => (
   <ResponsiveContainer>
+    
     <Segment style={{ minHeight: '100vh', padding: '8em 0em' }} vertical>
+      <Element name="investing" className="element">
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
           <Grid.Column width={8}>
@@ -45,10 +46,11 @@ const HomepageLayout = () => (
           </Grid.Column>
         </Grid.Row>
       </Grid>
+      </Element>
     </Segment>
 
     <Segment style={{ minHeight: '100vh', padding: '0em' }} vertical>
-      <Element name="test1" className="element">
+      <Element name="properties" className="element">
       <Grid celled='internally' columns='equal' stackable>
         <Grid.Row textAlign='center'>
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
@@ -72,40 +74,48 @@ const HomepageLayout = () => (
     </Segment>
 
     <Segment style={{ minHeight: '100vh', padding: '8em 0em' }} vertical>
-      <Container text>
-        <Header as='h3' style={{ fontSize: '2em' }}>
-          Breaking The Grid, Grabs Your Attention
-        </Header>
-        <p style={{ fontSize: '1.33em' }}>
-          Instead of focusing on content creation and hard work, we have learned how to master the
-          art of doing nothing by providing massive amounts of whitespace and generic content that
-          can seem massive, monolithic and worth your attention.
-        </p>
-        <Button as='a' size='large'>
-          Read More
-        </Button>
+      <Element name="criteria" className="element">
+        <Container text>
+          <Header as='h3' style={{ fontSize: '2em' }}>
+            Breaking The Grid, Grabs Your Attention
+          </Header>
+          <p style={{ fontSize: '1.33em' }}>
+            Instead of focusing on content creation and hard work, we have learned how to master the
+            art of doing nothing by providing massive amounts of whitespace and generic content that
+            can seem massive, monolithic and worth your attention.
+          </p>
+          <Button as='a' size='large'>
+            Read More
+          </Button>
 
-        <Divider
-          as='h4'
-          className='header'
-          horizontal
-          style={{ margin: '3em 0em', textTransform: 'uppercase' }}
-        >
-          Case Studies
-        </Divider>
+          <Divider
+            as='h4'
+            className='header'
+            horizontal
+            style={{ margin: '3em 0em', textTransform: 'uppercase' }}
+          >
+            Case Studies
+          </Divider>
 
-        <Header as='h3' style={{ fontSize: '2em' }}>
-          Did We Tell You About Our Bananas?
-        </Header>
-        <p style={{ fontSize: '1.33em' }}>
-          Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but
-          it's really true. It took years of gene splicing and combinatory DNA research, but our
-          bananas can really dance.
-        </p>
-        <Button as='a' size='large'>
-          I'm Still Quite Interested
-        </Button>
-      </Container>
+          <Header as='h3' style={{ fontSize: '2em' }}>
+            Did We Tell You About Our Bananas?
+          </Header>
+          <p style={{ fontSize: '1.33em' }}>
+            Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but
+            it's really true. It took years of gene splicing and combinatory DNA research, but our
+            bananas can really dance.
+          </p>
+          <Button as='a' size='large'>
+            I'm Still Quite Interested
+          </Button>
+        </Container>
+      </Element>
+    </Segment>
+
+    <Segment style={{ minHeight: '100vh', padding: '8em 0em' }} vertical>
+      <Element name="faq" className="element">
+        <h1>FAQ</h1>
+      </Element>
     </Segment>
 
     <Segment inverted vertical style={{ padding: '5em 0em' }}>
