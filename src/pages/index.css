@@ -5,3 +5,11 @@
 #disclaimer {
   padding: 10em 0em;
 }
+
+.element {
+  min-height: 100vh;
+}
+
+.active {
+  background: rgba(0, 0, 0, .1);
+}

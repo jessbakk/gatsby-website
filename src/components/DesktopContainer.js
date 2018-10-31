@@ -43,10 +43,10 @@ class DesktopContainer extends Component {
           >
             <Container>
               <Menu.Item><Icon onClick={this.scrollToTop} size='large' name='building outline'/></Menu.Item>
-              <Menu.Item><Link activeClass="active" to="investing" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>Investing With Us</Link></Menu.Item>
-              <Menu.Item><Link activeClass="active" to="properties" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>Properties</Link></Menu.Item>
-              <Menu.Item><Link activeClass="active" to="criteria" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>Investment Criteria</Link></Menu.Item>
-              <Menu.Item><Link activeClass="active" to="faq" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>FAQ</Link></Menu.Item>
+              <Link className="nav-link" activeClass="active" to="investing" spy={true} smooth={true} duration={500} onSetActive={this.handleSetActive}><Menu.Item>Investing With Us</Menu.Item></Link>
+              <Link className="nav-link" activeClass="active" to="properties" spy={true} smooth={true} duration={500} onSetActive={this.handleSetActive}><Menu.Item>Properties</Menu.Item></Link>
+              <Link className="nav-link" activeClass="active" to="criteria" spy={true} smooth={true} duration={500} onSetActive={this.handleSetActive}><Menu.Item>Investment Criteria</Menu.Item></Link>
+              <Link className="nav-link" activeClass="active" to="faq" spy={true} smooth={true} duration={500} onSetActive={this.handleSetActive}><Menu.Item>FAQ</Menu.Item></Link>
               <Menu.Item position='right'>
                 <Button as='a' style={{ marginLeft: '0.5em' }}>
                   Contact

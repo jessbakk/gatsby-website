@@ -10,14 +10,12 @@ import './index.css'
 
 const HomepageLayout = () => (
   <ResponsiveContainer>
-    
     <Segment className="segment" vertical>
       <Element name="investing" className="element">
         <h1>Investing With Us</h1>
       </Element>
     </Segment>
    
-
     <Segment className="segment" vertical>
       <Element name="properties" className="element">
         <h1>Properties</h1>
