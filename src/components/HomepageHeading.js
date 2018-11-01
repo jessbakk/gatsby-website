@@ -9,16 +9,16 @@ import {
 
 const HomepageHeading = ({ mobile }) => (
   <Container text>
-    <Header
-      as='h1'
-      content='Barshay Capital'
-      inverted
-      style={{
-        fontSize: mobile ? '2em' : '4em',
-        fontWeight: 'normal',
-        marginBottom: 0,
-        marginTop: mobile ? '1.5em' : '3em',
-      }}
+      <Header
+        as='h1'
+        content='Barshay Capital'
+        inverted
+        style={{
+          fontSize: mobile ? '2em' : '4em',
+          fontWeight: 'normal',
+          marginBottom: 0,
+          marginTop: mobile ? '1.5em' : '3em',
+        }}
     />
     <Header
       as='h2'
