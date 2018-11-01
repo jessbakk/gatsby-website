@@ -17,3 +17,11 @@
 h1 {
   padding-top: 300px;
 }
+
+.ui.menu .item {
+  color: rgba(0, 0, 0, .6)
+}
+
+.ui.menu .item:hover {
+  color: rgba(0, 0, 0, 1)
+}
