@@ -3,7 +3,7 @@ import { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Link, animateScroll } from 'react-scroll'
 import HomepageHeading from './HomepageHeading'
-import Background from '../images/Manhattan-Beach-Pier.jpg'
+import Background from '../images/beach.jpg'
 import {
   Button,
   Container,
