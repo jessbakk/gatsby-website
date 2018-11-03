@@ -6,9 +6,11 @@ import {
   Header,
   Icon
 } from 'semantic-ui-react'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 const HomepageHeading = ({ mobile }) => (
-  <Container text>
+  <ScrollAnimation animateIn="fadeIn"> 
+  <Container text> 
       <Header
         as='h1'
         content='BARSHAY CAPITAL'
@@ -34,6 +36,7 @@ const HomepageHeading = ({ mobile }) => (
       <Icon id='down-arrow' size='huge' name='angle double down' />
     </Link>
   </Container>
+  </ScrollAnimation>
 )
 
 HomepageHeading.propTypes = {
