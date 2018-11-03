@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'react-scroll'
 import {
-  Button,
   Container,
   Header,
   Icon
@@ -11,7 +11,7 @@ const HomepageHeading = ({ mobile }) => (
   <Container text>
       <Header
         as='h1'
-        content='Barshay Capital'
+        content='BARSHAY CAPITAL'
         inverted
         style={{
           fontSize: mobile ? '2em' : '4em',
@@ -30,10 +30,9 @@ const HomepageHeading = ({ mobile }) => (
         marginTop: mobile ? '0.5em' : '1.5em',
       }}
     />
-    <Button primary size='huge'>
-      Get Started
-      <Icon name='right arrow' />
-    </Button>
+    <Link activeClass="active" to="investing" spy={true} smooth={true} duration={500}>
+      <Icon id='down-arrow' size='huge' name='angle double down' />
+    </Link>
   </Container>
 )
 
