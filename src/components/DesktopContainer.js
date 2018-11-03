@@ -38,7 +38,7 @@ class DesktopContainer extends Component {
           <Menu
             style={{backgroundColor: 'rgba(255,255,255,.8)'}}
             fixed={'top'}
-            size='large'
+            size='huge'
             borderless
           >
             <Container>
@@ -51,6 +51,12 @@ class DesktopContainer extends Component {
                 <Button as='a' style={{ marginLeft: '0.5em' }}>
                   Contact
                 </Button>
+              </Menu.Item>
+              <Menu.Item id='facebook-nav'>
+                <Icon size='large' name='facebook'></Icon>
+              </Menu.Item>
+              <Menu.Item id='instagram-nav'>
+                <Icon size='large' name='instagram'></Icon>
               </Menu.Item>
             </Container>
           </Menu>
