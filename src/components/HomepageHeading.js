@@ -10,32 +10,39 @@ import ScrollAnimation from 'react-animate-on-scroll'
 
 const HomepageHeading = ({ mobile }) => (
   <ScrollAnimation animateIn="fadeIn"> 
-  <Container text> 
+    <Container text> 
       <Header
         as='h1'
         content='BARSHAY CAPITAL'
         inverted
         style={{
           fontSize: mobile ? '2em' : '4em',
-          fontWeight: 'normal',
+          fontWeight: 'bolder',
+          textShadow: '4px 4px 4px rgba(255, 255, 255, .4)',
           marginBottom: 0,
           marginTop: mobile ? '1.5em' : '3em',
         }}
     />
-    <Header
-      as='h2'
-      content='Do whatever you want when you want to.'
-      inverted
-      style={{
-        fontSize: mobile ? '1.5em' : '1.7em',
-        fontWeight: 'normal',
-        marginTop: mobile ? '0.5em' : '1.5em',
-      }}
-    />
-    <Link activeClass="active" to="investing" spy={true} smooth={true} duration={500}>
-      <Icon id='down-arrow' size='huge' name='angle double down' />
-    </Link>
-  </Container>
+      <Header
+        as='h2'
+        inverted
+        style={{
+          fontSize: mobile ? '1.5em' : '1.7em',
+          fontWeight: 'normal',
+          textShadow: '2px 2px 2px rgba(255, 255, 255, .5)',
+          marginTop: mobile ? '0.5em' : '1.5em',
+        }}
+      >
+        <ScrollAnimation animateIn="fadeIn" delay={500}>{slogan[0]}</ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn" delay={1500}>{slogan[1]}</ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn" delay={2500}>{slogan[2]}</ScrollAnimation>
+      </Header>
+      <ScrollAnimation animateIn="fadeIn" delay={3500}> 
+        <Link activeClass="active" to="investing" spy={true} smooth={true} duration={500}>
+          <Icon id='down-arrow' size='huge' name='angle double down' />
+        </Link>
+      </ScrollAnimation>
+    </Container>
   </ScrollAnimation>
 )
 
@@ -44,3 +51,5 @@ HomepageHeading.propTypes = {
 }
 
 export default HomepageHeading
+
+const slogan = ['Diversify Your Portfolio', 'Expand Your Networth', 'Protect Your Capital']
