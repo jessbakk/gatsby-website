@@ -3,9 +3,9 @@ import { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Link, animateScroll } from 'react-scroll'
 import HomepageHeading from './HomepageHeading'
+import ContactForm from './ContactForm'
 import Background from '../images/beach.jpg'
 import {
-  Button,
   Container,
   Icon,
   Menu,
@@ -47,15 +47,11 @@ class DesktopContainer extends Component {
               <Link activeClass="active" to="properties" spy={true} smooth={true} duration={500} onSetActive={this.handleSetActive}><Menu.Item>Properties</Menu.Item></Link>
               <Link activeClass="active" to="criteria" spy={true} smooth={true} duration={500} onSetActive={this.handleSetActive}><Menu.Item>Investment Criteria</Menu.Item></Link>
               <Link activeClass="active" to="faq" spy={true} smooth={true} duration={500} onSetActive={this.handleSetActive}><Menu.Item>FAQ</Menu.Item></Link>
-              <Menu.Item position='right'>
-                <Button primary as='a' style={{ marginLeft: '0.5em' }}>
-                  Contact
-                </Button>
-              </Menu.Item>
-              <Menu.Item id='facebook-nav'>
+              <ContactForm />
+              <Menu.Item id='facebook-nav' target='_blank' href='https://www.facebook.com/BarshayRealEstate'>
                 <Icon size='large' name='facebook'></Icon>
               </Menu.Item>
-              <Menu.Item id='instagram-nav'>
+              <Menu.Item id='instagram-nav' target='_blank' href='https://www.instagram.com/barshay_real_estate/'>
                 <Icon size='large' name='instagram'></Icon>
               </Menu.Item>
             </Container>

@@ -26,12 +26,11 @@ h1 {
   color: rgba(0, 0, 0, 1)
 }
 
-#facebook-nav {
-  margin: 0;
-  padding: 0;
+#instagram-nav:hover, #facebook-nav:hover {
+  background-color: rgba(255, 255, 255, 0);
 }
 
-#instagram-nav {
+#instagram-nav, #facebook-nav {
   margin: 0;
   padding: 0;
 }

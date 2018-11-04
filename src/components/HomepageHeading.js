@@ -9,7 +9,7 @@ import {
 import ScrollAnimation from 'react-animate-on-scroll'
 
 const HomepageHeading = ({ mobile }) => (
-  <ScrollAnimation animateIn="fadeIn"> 
+  <ScrollAnimation animateIn="fadeIn" animatePreScroll> 
     <Container text> 
       <Header
         as='h1'
@@ -33,9 +33,9 @@ const HomepageHeading = ({ mobile }) => (
           marginTop: mobile ? '0.5em' : '1.5em',
         }}
       >
-        <ScrollAnimation animateIn="fadeIn" delay={500}>{slogan[0]}</ScrollAnimation>
-        <ScrollAnimation animateIn="fadeIn" delay={1500}>{slogan[1]}</ScrollAnimation>
-        <ScrollAnimation animateIn="fadeIn" delay={2500}>{slogan[2]}</ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn" delay={500} animatePreScroll>{slogan[0]}</ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn" delay={1500} animatePreScroll>{slogan[1]}</ScrollAnimation>
+        <ScrollAnimation animateIn="fadeIn" delay={2500} animatePreScroll>{slogan[2]}</ScrollAnimation>
       </Header>
       <ScrollAnimation animateIn="fadeIn" delay={3500}> 
         <Link activeClass="active" to="investing" spy={true} smooth={true} duration={500}>
