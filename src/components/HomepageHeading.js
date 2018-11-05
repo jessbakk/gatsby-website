@@ -38,7 +38,7 @@ const HomepageHeading = ({ mobile }) => (
         <ScrollAnimation style={{display: 'inline-block'}} animateIn="fadeIn" delay={1500} animatePreScroll>|&nbsp;{slogan[1]}&nbsp;&nbsp;</ScrollAnimation>
         <ScrollAnimation style={{display: 'inline-block'}} animateIn="fadeIn" delay={2500} animatePreScroll>|&nbsp;{slogan[2]}&nbsp;&nbsp;</ScrollAnimation>
       </Header>
-      <ScrollAnimation animateIn="fadeIn" delay={3500}> 
+      <ScrollAnimation animateIn="fadeInDown" delay={3500}> 
         <Link activeClass="active" to="investing" spy={true} smooth={true} duration={500}>
           <Icon id='down-arrow' size='huge' name='angle double down' />
         </Link>
