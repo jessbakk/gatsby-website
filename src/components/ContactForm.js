@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Form, Grid, Menu, Modal } from 'semantic-ui-react'
+import { Button, Form, Grid, Menu, Modal, TextArea } from 'semantic-ui-react'
 
 const ContactForm = () => (
   <Modal size="small" trigger={
@@ -20,12 +20,12 @@ const ContactForm = () => (
             <Grid.Column>
               <Form action="https://formspree.io/ianbuchholz@gmail.com" method="POST">
                 <Form.Group widths='equal'>
-                  <Form.Input fluid type="text" name="First Name" label='First Name' placeholder='First Name' />
-                  <Form.Input fluid type="text" name="Last Name" label='Last Name' placeholder='Last Name' />
+                  <Form.Input fluid type="text" name="First Name" placeholder='First Name' />
+                  <Form.Input fluid type="text" name="Last Name" placeholder='Last Name' />
                 </Form.Group>
-                <Form.Input fluid type="email" name="Email" label='Email' placeholder='Email' />
-                <Form.Input fluid type="text" name="Message" label='Message' />
-                <Button type='submit'>Submit</Button>
+                <Form.Input fluid type="email" placeholder='Email' />
+                <TextArea autoHeight type="text" name="Message" label='Message' placeholder='Message'/>
+                <Button style={{marginTop: '1em'}} type='submit'>Submit</Button>
               </Form>
             </Grid.Column>
           </Grid.Row>
