@@ -10,18 +10,18 @@ const Investing = () => (
     <Grid centered columns={3}>
       <Grid.Row centered columns={3}>
         <Grid.Column textAlign='center'>
-          <ScrollAnimation animateIn='flipInY'>
+          <ScrollAnimation animateIn='flipInY' offset={0}>
             <Icon name='building' size='massive' circular></Icon>
           </ScrollAnimation>
-          <ScrollAnimation style={{marginTop: '2em'}} animateIn='slideInUp'>
+          <ScrollAnimation style={{marginTop: '2em'}} animateIn='slideInUp' offset={0}>
             <h4>Apartments are a hedge against inflation and not enough new properties are being built to handle the increasing population.</h4>
           </ScrollAnimation>
         </Grid.Column>
         <Grid.Column textAlign='center'>
-          <ScrollAnimation animateIn='flipInY' delay={500}>
+          <ScrollAnimation animateIn='flipInY' delay={500} offset={0}>
             <Icon name='building' size='massive' circular />
           </ScrollAnimation>
-          <ScrollAnimation style={{marginTop: '2em'}} animateIn='slideInUp' delay={500}>
+          <ScrollAnimation style={{marginTop: '2em'}} animateIn='slideInUp' delay={500} offset={0}>
             <h4>Apartment buildings are the best asset class because unlike Office and Retail, they are not affected by technological evolution (The Amazon Effect).</h4>
           </ScrollAnimation>
         </Grid.Column>
@@ -29,7 +29,7 @@ const Investing = () => (
 
       <Grid.Row centered columns={3}>
         <Grid.Column textAlign='center'>
-          <ScrollAnimation animateIn='flipInY' delay={1000}>
+          <ScrollAnimation animateIn='flipInY' delay={1000} offset={0}>
             <Icon name='building' size='massive' circular />
           </ScrollAnimation>
           <ScrollAnimation style={{marginTop: '2em'}} animateIn='slideInUp' delay={1000} offset={0}>
@@ -37,7 +37,7 @@ const Investing = () => (
           </ScrollAnimation>
         </Grid.Column>
         <Grid.Column textAlign='center'>
-          <ScrollAnimation animateIn='flipInY' delay={1500}>
+          <ScrollAnimation animateIn='flipInY' delay={1500} offset={0}>
             <Icon name='building' size='massive' circular />
           </ScrollAnimation>
           <ScrollAnimation style={{marginTop: '2em'}} animateIn='fadeIn' delay={1500} offset={0}>
@@ -45,7 +45,7 @@ const Investing = () => (
           </ScrollAnimation>
         </Grid.Column>
         <Grid.Column textAlign='center'>
-          <ScrollAnimation animateIn='flipInY' delay={2000}>
+          <ScrollAnimation animateIn='flipInY' delay={2000} offset={0}>
             <Icon name='building' size='massive' circular />
           </ScrollAnimation>
           <ScrollAnimation style={{marginTop: '2em'}} animateIn='slideInUp' delay={2000} offset={0}>

@@ -34,11 +34,11 @@ const HomepageHeading = ({ mobile }) => (
           marginTop: mobile ? '0.5em' : '1.5em',
         }}
       >
-        <ScrollAnimation style={{display: 'inline-block'}} animateIn="fadeIn" delay={500} animatePreScroll>{slogan[0]}&nbsp;&nbsp;</ScrollAnimation>
-        <ScrollAnimation style={{display: 'inline-block'}} animateIn="fadeIn" delay={1500} animatePreScroll>|&nbsp;{slogan[1]}&nbsp;&nbsp;</ScrollAnimation>
-        <ScrollAnimation style={{display: 'inline-block'}} animateIn="fadeIn" delay={2500} animatePreScroll>|&nbsp;{slogan[2]}&nbsp;&nbsp;</ScrollAnimation>
+        <ScrollAnimation style={{display: 'inline-block'}} animateIn="fadeIn" delay={500} offset={0} animatePreScroll>{slogan[0]}&nbsp;&nbsp;</ScrollAnimation>
+        <ScrollAnimation style={{display: 'inline-block'}} animateIn="fadeIn" delay={1500} offset={0} animatePreScroll>|&nbsp;{slogan[1]}&nbsp;&nbsp;</ScrollAnimation>
+        <ScrollAnimation style={{display: 'inline-block'}} animateIn="fadeIn" delay={2500} offset={0} animatePreScroll>|&nbsp;{slogan[2]}&nbsp;&nbsp;</ScrollAnimation>
       </Header>
-      <ScrollAnimation animateIn="fadeInDown" delay={3500}> 
+      <ScrollAnimation animateIn="fadeInDown" delay={3500} offset={0}> 
         <Link activeClass="active" to="investing" spy={true} smooth={true} duration={500}>
           <Icon id='down-arrow' size='huge' name='angle double down' />
         </Link>
