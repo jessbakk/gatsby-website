@@ -2,6 +2,7 @@ import React from 'react'
 import { Element } from 'react-scroll'
 import 'semantic-ui-css/semantic.min.css'
 import ResponsiveContainer from '../components/ResponsiveContainer'
+import Investing from '../components/Investing'
 import {
   Container,
   Segment
@@ -12,13 +13,13 @@ import './index.css'
 
 const HomepageLayout = () => (
   <ResponsiveContainer>
-    <Segment className="segment" vertical>
-      <Element name="investing" className="element">
+    <Element name="investing" className="element">
+      <Segment className="segment" vertical>
         <ScrollAnimation animateIn="fadeIn">
-          <h1>Investing With Us</h1>
+          <Investing />
         </ScrollAnimation>
-      </Element>
-    </Segment>
+      </Segment>
+    </Element>
    
     <Segment className="segment" vertical>
       <Element name="properties" className="element">
