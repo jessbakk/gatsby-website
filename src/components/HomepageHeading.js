@@ -9,7 +9,7 @@ import {
 import ScrollAnimation from 'react-animate-on-scroll'
 
 const HomepageHeading = ({ mobile }) => (
-  <ScrollAnimation animateIn="fadeIn" animatePreScroll> 
+  <ScrollAnimation animateIn="fadeIn" offset={0} animatePreScroll> 
     <Container text> 
       <Header
         as='h1'

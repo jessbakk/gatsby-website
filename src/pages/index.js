@@ -15,9 +15,7 @@ const HomepageLayout = () => (
   <ResponsiveContainer>
     <Element name="investing" className="element">
       <Segment className="segment" vertical>
-        <ScrollAnimation animateIn="fadeIn">
-          <Investing />
-        </ScrollAnimation>
+        <Investing />
       </Segment>
     </Element>
    
