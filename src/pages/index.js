@@ -3,6 +3,7 @@ import { Element } from 'react-scroll'
 import 'semantic-ui-css/semantic.min.css'
 import ResponsiveContainer from '../components/ResponsiveContainer'
 import WhyApartments from '../components/WhyApartments'
+import WhySouthBay from '../components/WhySouthBay'
 import {
   Container,
   Segment
@@ -14,9 +15,8 @@ import './index.css'
 const HomepageLayout = () => (
   <ResponsiveContainer>
     <Element name="investing" className="element">
-      <Segment className="segment" vertical>
-        <WhyApartments />
-      </Segment>
+      <WhyApartments />
+      <WhySouthBay />
     </Element>
    
     <Segment className="segment" vertical>
