@@ -2,7 +2,7 @@ import React from 'react'
 import { Element } from 'react-scroll'
 import 'semantic-ui-css/semantic.min.css'
 import ResponsiveContainer from '../components/ResponsiveContainer'
-import Investing from '../components/Investing'
+import WhyApartments from '../components/WhyApartments'
 import {
   Container,
   Segment
@@ -15,7 +15,7 @@ const HomepageLayout = () => (
   <ResponsiveContainer>
     <Element name="investing" className="element">
       <Segment className="segment" vertical>
-        <Investing />
+        <WhyApartments />
       </Segment>
     </Element>
    
