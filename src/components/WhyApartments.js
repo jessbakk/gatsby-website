@@ -9,7 +9,7 @@ const WhyApartments = () => (
         <h1 style={{textAlign: 'center', marginTop: '3em', marginBottom: '2em'}}>WHY APARTMENTS?</h1>
       </ScrollAnimation>
       <Grid centered columns={3}>
-        <Grid.Row centered columns={3}>
+        <Grid.Row columns={3}>
           <Grid.Column textAlign='center'>
             <ScrollAnimation animateIn='flipInY' offset={0}>
               <Icon name='building' size='massive' circular></Icon>
