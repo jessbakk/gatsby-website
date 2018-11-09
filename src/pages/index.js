@@ -17,7 +17,9 @@ const HomepageLayout = () => (
   <ResponsiveContainer>
     <Element name="investing" className="element">
       <OurMission />
-      <WhyApartments />
+      <Element name="why-apartments" className="element">
+        <WhyApartments />
+      </Element>
       <WhySouthBay />
     </Element>
    

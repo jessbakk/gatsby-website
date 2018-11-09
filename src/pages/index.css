@@ -33,7 +33,7 @@
   padding: 0;
 }
 
-#down-arrow {
+#down-arrow-header {
   padding-top: 3em;
   -moz-transition:all 0.5s ease-in-out;
   -webkit-transition:all 0.5s ease-in-out;
@@ -44,6 +44,56 @@
   -webkit-animation:blink normal 1.5s infinite ease-in-out;
   -ms-animation:blink normal 1.5s infinite ease-in-out;
   animation:blink normal 1.5s infinite ease-in-out;
+}
+
+#down-arrow-our-mission {
+  padding-top: 1em;
+  -moz-transition:all 0.5s ease-in-out;
+  -webkit-transition:all 0.5s ease-in-out;
+  -o-transition:all 0.5s ease-in-out;
+  -ms-transition:all 0.5s ease-in-out;
+  transition:all 0.5s ease-in-out;
+  -moz-animation:blinkB normal 1.5s infinite ease-in-out;
+  -webkit-animation:blinkB normal 1.5s infinite ease-in-out;
+  -ms-animation:blinkB normal 1.5s infinite ease-in-out;
+  animation:blinkB normal 1.5s infinite ease-in-out;
+}
+
+#down-arrow-our-mission:hover {
+  color: black;
+  -moz-transition:none;
+  -webkit-transition:none;
+  -o-transition:none;
+  -ms-transition:none;
+  transition:none;
+  -moz-animation:none;
+  -webkit-animation:none;
+  -ms-animation:none;
+  animation:none;
+}
+
+@keyframes blinkB {
+  0% {
+        color: rgba(0,0,0, 1)
+  }
+  50% {
+        color: rgba(0,0,0, .4)
+  }
+  100% {
+        color: rgba(0,0,0, 1)
+  }
+}
+
+@-webkit-keyframes blinkB {
+  0% {
+        color: rgba(0,0,0, 1)
+  }
+  50% {
+        color: rgba(0,0,0, .4)
+  }
+  100% {
+        color: rgba(0,0,0, 1)
+  }
 }
 
 @keyframes blink {

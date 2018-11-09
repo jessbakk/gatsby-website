@@ -6,7 +6,7 @@ const WhyApartments = () => (
   <Segment className="segment" vertical>
     <Container>
       <ScrollAnimation animateIn='fadeIn' offset={0}>
-        <h1 style={{textAlign: 'center', marginTop: '3em', marginBottom: '2em'}}>WHY APARTMENTS?</h1>
+        <h1 style={{textAlign: 'center', marginTop: '1em', marginBottom: '3em'}}>INVESTING IN APARTMENTS</h1>
       </ScrollAnimation>
       <Grid centered columns={3}>
         <Grid.Row columns={3}>
