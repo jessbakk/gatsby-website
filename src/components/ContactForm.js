@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, Form, Grid, Icon, Menu, Modal, TextArea } from 'semantic-ui-react'
 
 const ContactForm = () => (
-  <Modal size="small" trigger={
+  <Modal size="large" trigger={
     <Menu.Item id='contact-nav' position='right'>
       <Button primary style={{ marginLeft: '0.5em' }}>
         Contact
