@@ -5,6 +5,7 @@ import ResponsiveContainer from '../components/ResponsiveContainer'
 import OurMission from '../components/OurMission'
 import WhyApartments from '../components/WhyApartments'
 import WhySouthBay from '../components/WhySouthBay'
+import FAQ from '../components/FAQ'
 import {
   Container,
   Segment
@@ -39,13 +40,9 @@ const HomepageLayout = () => (
       </Element>
     </Segment>
 
-    <Segment className="segment" vertical>
       <Element name="faq" className="element">
-        <ScrollAnimation animateIn="fadeIn">
-          <h1>FAQ</h1>
-        </ScrollAnimation>
+          <FAQ />
       </Element>
-    </Segment>
 
     <Segment className="segment" id="disclaimer" inverted vertical>
       <Container>
