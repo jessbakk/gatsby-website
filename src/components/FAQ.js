@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Accordion, Container, Icon, Segment } from 'semantic-ui-react'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 class FAQ extends Component {
   state = { activeIndex: 0 }
@@ -18,12 +19,14 @@ class FAQ extends Component {
     return (
       <Segment className="segment" vertical>
         <Container>
-          <Accordion>
+          <ScrollAnimation animateIn='fadeIn' delay={500} offset={0}>
+          <Accordion fluid styled>
             <Accordion.Title active={activeIndex === 0} index={0} onClick={this.handleClick}>
               <Icon name='dropdown' />
               ARE YOU AN ACCREDITED INVESTOR?
             </Accordion.Title>
             <Accordion.Content active={activeIndex === 0}>
+            <ScrollAnimation animateIn='fadeIn' offset={0}>
               <p>An <em>accredited investor</em>, in the context of a natural person, includes anyone who:</p>
               <ul>
                 <li>earned income that exceeded $200,000 (or $300,000 together with a spouse) in each of the prior two years, and reasonably expects the same for the current year,&nbsp;<em>OR</em></li>
@@ -38,7 +41,9 @@ class FAQ extends Component {
               <p>In this context, a <em>sophisticated </em>person means the person must have, or the company or private fund offering the securities reasonably believes that this person has, sufficient knowledge and experience in financial and business matters to evaluate the merits and risks of the prospective investment.</p>
               <p>Source: Investor.gov</p>
               <p><a target='_blank' rel="noopener noreferrer" href="https://www.investor.gov/system/files/news/documents/english/ib_accreditedinvestors.pdf">https://www.investor.gov/system/files/news/documents/english/ib_accreditedinvestors.pdf</a></p>
+            </ScrollAnimation>
             </Accordion.Content>
+            
 
             <Accordion.Title active={activeIndex === 1} index={1} onClick={this.handleClick}>
               <Icon name='dropdown' />
@@ -127,6 +132,7 @@ class FAQ extends Component {
               <p>No. By their nature, real estate investments have a longer term time horizon than that of liquid stocks or bonds.</p>
             </Accordion.Content>
           </Accordion>
+          </ScrollAnimation>
         </Container>
       </Segment>
     )
