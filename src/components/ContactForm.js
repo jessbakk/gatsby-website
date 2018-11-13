@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Form, Grid, Icon, Menu, Modal, TextArea } from 'semantic-ui-react'
+import { Button, Container, Form, Grid, Icon, Menu, Modal, TextArea } from 'semantic-ui-react'
 
 const ContactForm = () => (
   <Modal size="large" trigger={
@@ -10,6 +10,7 @@ const ContactForm = () => (
     </Menu.Item>
     } closeIcon>
       <Modal.Content>
+        <Container>
         <Grid divided='vertically'>
           <Grid.Row columns={2}>
             <Grid.Column>
@@ -30,6 +31,7 @@ const ContactForm = () => (
             </Grid.Column>
           </Grid.Row>
         </Grid>
+        </Container>
     </Modal.Content>
   </Modal>
 )
