@@ -5,6 +5,7 @@ import ResponsiveContainer from '../components/ResponsiveContainer'
 import OurMission from '../components/OurMission'
 import WhyApartments from '../components/WhyApartments'
 import WhySouthBay from '../components/WhySouthBay'
+import Properties from '../components/Properties'
 import FAQ from '../components/FAQ'
 import {
   Container,
@@ -24,13 +25,9 @@ const HomepageLayout = () => (
       <WhySouthBay />
     </Element>
    
-    <Segment className="segment" vertical>
-      <Element name="properties" className="element">
-        <ScrollAnimation animateIn="fadeIn">
-          <h1>Properties</h1>
-        </ScrollAnimation>
-      </Element>
-    </Segment>
+    <Element name="properties" className="element">
+      <Properties />
+    </Element>
 
     <Segment className="segment" vertical>
       <Element name="criteria" className="element">
