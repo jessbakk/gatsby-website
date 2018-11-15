@@ -11,7 +11,6 @@ import {
   Container,
   Segment
 } from 'semantic-ui-react'
-import ScrollAnimation from 'react-animate-on-scroll'
 import "animate.css/animate.min.css"
 import './index.css'
 
@@ -29,17 +28,9 @@ const HomepageLayout = () => (
       <Properties />
     </Element>
 
-    <Segment className="segment" vertical>
-      <Element name="criteria" className="element">
-        <ScrollAnimation animateIn="fadeIn">
-          <h1>Investment Criteria</h1>
-        </ScrollAnimation>
-      </Element>
-    </Segment>
-
-      <Element name="faq" className="element">
-          <FAQ />
-      </Element>
+    <Element name="faq" className="element">
+        <FAQ />
+    </Element>
 
     <Segment className="segment" id="disclaimer" inverted vertical>
       <Container>

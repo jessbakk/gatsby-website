@@ -45,7 +45,6 @@ class DesktopContainer extends Component {
               <Link onClick={this.scrollToTop} to="top"><Menu.Item >BARSHAY<Icon id='building-nav' size='large' name='building outline'/></Menu.Item></Link>
               <Link activeClass="active" to="investing" spy={true} smooth={true} duration={500} onSetActive={this.handleSetActive}><Menu.Item>Investing With Us</Menu.Item></Link>
               <Link activeClass="active" to="properties" spy={true} smooth={true} duration={500} onSetActive={this.handleSetActive}><Menu.Item>Properties</Menu.Item></Link>
-              <Link activeClass="active" to="criteria" spy={true} smooth={true} duration={500} onSetActive={this.handleSetActive}><Menu.Item>Investment Criteria</Menu.Item></Link>
               <Link activeClass="active" to="faq" spy={true} smooth={true} duration={500} onSetActive={this.handleSetActive}><Menu.Item>FAQ</Menu.Item></Link>
               <ContactForm />
               <Menu.Item id='facebook-nav' target='_blank' href='https://www.facebook.com/BarshayRealEstate'>
