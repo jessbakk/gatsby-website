@@ -1,10 +1,11 @@
 import React from 'react'
-import { Container, Segment } from 'semantic-ui-react'
+import { Container, Grid, Segment } from 'semantic-ui-react'
 
 const Properties = () => (
   <Segment className='segment'>
     <Container>
-      <h1>Properties</h1>
+      <h1>PROPERTIES</h1>
+      <Grid></Grid>
     </Container>
   </Segment>
 )
