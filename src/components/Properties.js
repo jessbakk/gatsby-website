@@ -1,22 +1,26 @@
 import React from 'react'
-import { Card, Container, Placeholder, Segment } from 'semantic-ui-react'
+import { Card, Container, Icon, Placeholder, Segment } from 'semantic-ui-react'
 import Slider from "react-slick";
 import ScrollAnimation from 'react-animate-on-scroll'
 
 class Properties extends React.Component {
   render() {
     const settings = {
+      className: 'center',
+      centerMode: 'true',
       swipeToSlide: true,
       dots: true,
       infinite: true,
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 1,
+      arrows: true,
     }
     return (
+     
+    <ScrollAnimation animateIn='fadeIn'>
       <Segment>
         <Container>
-          <ScrollAnimation animateIn='fadeIn'>
             <Slider {...settings}>
               <div>
                 <Card>
@@ -85,9 +89,10 @@ class Properties extends React.Component {
                 </Card>
               </div>
             </Slider>
-          </ScrollAnimation>
-        </Container>
-      </Segment>
+          </Container>
+        </Segment>
+      </ScrollAnimation>
+        
     )
   }
 }
