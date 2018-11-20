@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Container, Icon, Placeholder, Segment } from 'semantic-ui-react'
+import { Card, Container, Placeholder, Segment } from 'semantic-ui-react'
 import Slider from "react-slick";
 import ScrollAnimation from 'react-animate-on-scroll'
 
