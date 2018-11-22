@@ -5,7 +5,7 @@ import ResponsiveContainer from '../components/ResponsiveContainer'
 import OurMission from '../components/OurMission'
 import WhyApartments from '../components/WhyApartments'
 import WhySouthBay from '../components/WhySouthBay'
-import Properties from '../components/Properties'
+import PropertiesScroller from '../components/PropertiesScroller'
 import FAQ from '../components/FAQ'
 import Disclaimer from '../components/Disclaimer'
 import "slick-carousel/slick/slick.css"
@@ -23,7 +23,7 @@ const HomepageLayout = () => (
       <WhySouthBay />
     </Element>
     <Element name="properties" className="element">
-      <Properties />
+      <PropertiesScroller />
     </Element>
     <Element name="faq" className="element">
       <FAQ />
