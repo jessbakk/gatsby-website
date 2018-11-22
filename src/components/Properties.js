@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Container, Placeholder, Segment } from 'semantic-ui-react'
+import { Card, Container, Modal, Placeholder, Segment } from 'semantic-ui-react'
 import Slider from "react-slick";
 import ScrollAnimation from 'react-animate-on-scroll'
 
@@ -22,6 +22,7 @@ class Properties extends React.Component {
       <Segment>
         <Container>
             <Slider {...settings}>
+            <Modal size="large" trigger={
               <div>
                 <Card>
                   <Placeholder>
@@ -32,7 +33,8 @@ class Properties extends React.Component {
                     <Card.Description>Property Description</Card.Description>
                   </Card.Content>
                 </Card>
-              </div>
+              </div>}>
+            </Modal>
               <div>
                 <Card>
                   <Placeholder>

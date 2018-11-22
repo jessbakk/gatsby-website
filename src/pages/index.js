@@ -22,13 +22,11 @@ const HomepageLayout = () => (
       </Element>
       <WhySouthBay />
     </Element>
-   
     <Element name="properties" className="element">
       <Properties />
     </Element>
-
     <Element name="faq" className="element">
-        <FAQ />
+      <FAQ />
     </Element>
     <Disclaimer />
   </ResponsiveContainer>
