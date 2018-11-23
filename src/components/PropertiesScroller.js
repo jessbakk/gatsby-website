@@ -22,9 +22,9 @@ class PropertiesScroller extends React.Component {
       <Segment>
         <Container>
             <Slider {...settings}>
-              {properties.map(p => {
+              {properties.map((p, i) => {
                 return (
-                  <div>
+                  <div key={i}>
                     <Modal size='large' trigger={
                       <Card>
                         <Placeholder>

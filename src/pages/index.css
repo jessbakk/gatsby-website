@@ -124,3 +124,12 @@ i.circular.icon {
   box-shadow: 0 0 0 0.05em rgba(0,0,0,1) inset;
   font-size: 5em;
 }
+
+.slick-prev:before, .slick-next:before {
+  color: black;
+  font-size: 20px;
+}
+
+.slick-slide, .slick-slide * { 
+  outline: none !important; 
+}
