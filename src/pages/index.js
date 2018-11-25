@@ -3,8 +3,6 @@ import { Element } from 'react-scroll'
 import 'semantic-ui-css/semantic.min.css'
 import ResponsiveContainer from '../components/ResponsiveContainer'
 import OurMission from '../components/OurMission'
-import WhyApartments from '../components/WhyApartments'
-import WhySouthBay from '../components/WhySouthBay'
 import PropertiesScroller from '../components/PropertiesScroller'
 import FAQ from '../components/FAQ'
 import Disclaimer from '../components/Disclaimer'
@@ -17,10 +15,6 @@ const HomepageLayout = () => (
   <ResponsiveContainer>
     <Element name="investing" className="element">
       <OurMission />
-      <Element name="why-apartments" className="element">
-        <WhyApartments />
-      </Element>
-      <WhySouthBay />
     </Element>
     <Element name="properties" className="element">
       <PropertiesScroller />

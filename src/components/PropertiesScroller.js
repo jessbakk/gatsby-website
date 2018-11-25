@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Container, Header, Modal, Placeholder, Segment } from 'semantic-ui-react'
+import { Card, Container, Grid, Header, Modal, Placeholder, Segment } from 'semantic-ui-react'
 import Slider from "react-slick";
 import ScrollAnimation from 'react-animate-on-scroll'
 
@@ -36,27 +36,33 @@ class PropertiesScroller extends React.Component {
                         </Card.Content>
                       </Card>} closeIcon>
                       <Modal.Content>
-                        <Placeholder>
-                          <Placeholder.Image square />
-                        </Placeholder>
-                        <Modal.Description>
-                          <Header>
-                            {p.name}
-                          </Header>
-                          <p>{p.property_desc}</p>
-                          <p>{p.investment_desc}</p>
-                          <ul>
-                            <li>Purchase Price: {p.purchase_price}</li>
-                            <li>Units: {p.units}</li>
-                            <li>Price Per Unit: {p.unit_price}</li>
-                            <li>RSF: {p.rsf}</li>
-                            <li>Year Built: {p.year_built}</li>
-                            <li>Current Cap Rate: {p.current_cap_rate}</li>
-                            <li>Market Cap Rate: {p.market_cap_rate}</li>
-                            <li>Current GRM: {p.current_grm}</li>
-                            <li>Market GRM: {p.market_grm}</li>
-                          </ul>
-                        </Modal.Description>
+                        <Grid columns={2}>
+                          <Grid.Column>
+                            <Placeholder>
+                              <Placeholder.Image square />
+                            </Placeholder>
+                          </Grid.Column>
+                          <Grid.Column>
+                            <Modal.Description>
+                              <Header>
+                                {p.name}
+                              </Header>
+                              <p>{p.property_desc}</p>
+                              <p>{p.investment_desc}</p>
+                              <ul>
+                                <li>Purchase Price: {p.purchase_price}</li>
+                                <li>Units: {p.units}</li>
+                                <li>Price Per Unit: {p.unit_price}</li>
+                                <li>RSF: {p.rsf}</li>
+                                <li>Year Built: {p.year_built}</li>
+                                <li>Current Cap Rate: {p.current_cap_rate}</li>
+                                <li>Market Cap Rate: {p.market_cap_rate}</li>
+                                <li>Current GRM: {p.current_grm}</li>
+                                <li>Market GRM: {p.market_grm}</li>
+                              </ul>
+                            </Modal.Description>
+                          </Grid.Column>
+                        </Grid>
                       </Modal.Content>
                     </Modal>
                   </div>
