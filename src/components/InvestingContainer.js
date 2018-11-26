@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Grid, Segment } from 'semantic-ui-react'
 import Investing from './Investing'
 import Mission from './Mission'
+import Criteria from './Criteria'
 import WhyApartments from './WhyApartments'
 import WhySouthBay from './WhySouthBay'
 
@@ -18,7 +19,7 @@ class InvestingContainer extends React.Component {
     if (button === 'our_mission') {
       this.setState({view: <Mission />})
     } else if (button === 'criteria') {
-      this.setState({view: 'INVESTMENT CRITERIA'})
+      this.setState({view: <Criteria />})
     } else if (button === 'apartments') {
       this.setState({view: <WhyApartments />})
     } else if (button === 'south_bay') {
