@@ -18,9 +18,9 @@ class PropertiesScroller extends React.Component {
       adaptiveHeight: true
     }
     return (
-    <ScrollAnimation animateIn='fadeIn'>
       <Segment>
         <Container>
+          <ScrollAnimation animateIn='fadeIn' delay={300} offset={0}>
             <Slider {...settings}>
               {properties.map((p, i) => {
                 return (
@@ -69,9 +69,10 @@ class PropertiesScroller extends React.Component {
                 )
               })}
             </Slider>
-          </Container>
-        </Segment>
-      </ScrollAnimation>  
+          </ScrollAnimation> 
+        </Container>
+      </Segment>
+       
     )
   }
 }

@@ -38,6 +38,7 @@ class InvestingContainer extends React.Component {
               {this.state.view}
             </Grid.Column>
             <Grid.Column>
+              <p id='investing_with_us' onClick={this.handleClick}>INVESTING WITH US</p>
               <p id='our_mission' onClick={this.handleClick}>OUR MISSION</p>
               <p id='criteria' onClick={this.handleClick}>INVESTMENT CRITERIA</p>
               <p id='apartments' onClick={this.handleClick}>WHY APARTMENTS?</p>

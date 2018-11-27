@@ -19,7 +19,7 @@ class FAQ extends Component {
     return (
       <Segment className="segment" vertical>
         <Container>
-          <ScrollAnimation animateIn='fadeIn' delay={500} offset={0}>
+          <ScrollAnimation animateIn='fadeIn' delay={300} offset={0}>
           <Accordion fluid styled>
             <Accordion.Title active={activeIndex === 0} index={0} onClick={this.handleClick}>
               <Icon name='dropdown' />

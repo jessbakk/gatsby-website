@@ -2,7 +2,7 @@ import React from 'react'
 import { Element } from 'react-scroll'
 import 'semantic-ui-css/semantic.min.css'
 import ResponsiveContainer from '../components/ResponsiveContainer'
-import OurMission from '../components/OurMission'
+import InvestingContainer from '../components/InvestingContainer'
 import PropertiesScroller from '../components/PropertiesScroller'
 import FAQ from '../components/FAQ'
 import Disclaimer from '../components/Disclaimer'
@@ -14,7 +14,7 @@ import './index.css'
 const HomepageLayout = () => (
   <ResponsiveContainer>
     <Element name="investing" className="element">
-      <OurMission />
+      <InvestingContainer />
     </Element>
     <Element name="properties" className="element">
       <PropertiesScroller />
