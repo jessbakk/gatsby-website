@@ -133,3 +133,7 @@ i.circular.icon {
 .slick-slide, .slick-slide * { 
   outline: none !important; 
 }
+
+.investing_link:hover {
+  cursor: pointer;
+}
