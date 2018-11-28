@@ -30,6 +30,7 @@ class DesktopContainer extends Component {
     return (
       <Responsive minWidth={Responsive.onlyTablet.minWidth}>
         <Segment
+          className='full'
           inverted
           textAlign='center'
           style={{ minHeight: '100vh', padding: '1em 0em', backgroundImage: `url(${Background})`, backgroundSize: 'cover', backgroundPosition: 'center center', backgroundAttachment: 'fixed' }}

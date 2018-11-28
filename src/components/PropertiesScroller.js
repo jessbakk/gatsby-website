@@ -18,7 +18,7 @@ class PropertiesScroller extends React.Component {
       adaptiveHeight: true
     }
     return (
-      <Segment>
+      <Segment className='full'>
         <Container>
           <ScrollAnimation animateIn='fadeIn' delay={300} offset={0}>
             <Slider {...settings}>

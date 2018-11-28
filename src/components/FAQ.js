@@ -17,7 +17,7 @@ class FAQ extends Component {
     const { activeIndex } = this.state
 
     return (
-      <Segment className="segment" vertical>
+      <Segment className='full' vertical>
         <Container>
           <ScrollAnimation animateIn='fadeIn' delay={300} offset={0}>
           <Accordion fluid styled>

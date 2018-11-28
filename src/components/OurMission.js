@@ -4,7 +4,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import { Link } from 'react-scroll'
 
 const OurMission = () => (
-  <Segment className="segment" style={{fontSize: '1.5em'}} vertical>
+  <Segment className='full' style={{fontSize: '1.5em'}} vertical>
     <Container>
       <Grid columns={2}>
         <Grid.Column>

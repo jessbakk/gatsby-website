@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Grid, Segment } from 'semantic-ui-react'
+import { Container, Menu, Segment } from 'semantic-ui-react'
 import Investing from './Investing'
 import Mission from './Mission'
 import Criteria from './Criteria'
@@ -31,20 +31,16 @@ class InvestingContainer extends React.Component {
 
   render() {
     return (
-      <Segment className="segment" style={{fontSize: '1.5em'}} vertical>
+      <Segment className='full'>
+        <Menu text vertical>
+          <Menu.Item className='investing_link' id='investing_with_us' onClick={this.handleClick}>INVESTING WITH US</Menu.Item>
+          <Menu.Item className='investing_link' id='our_mission' onClick={this.handleClick}>OUR MISSION</Menu.Item>
+          <Menu.Item className='investing_link' id='criteria' onClick={this.handleClick}>INVESTMENT CRITERIA</Menu.Item>
+          <Menu.Item className='investing_link' id='apartments' onClick={this.handleClick}>WHY APARTMENTS?</Menu.Item>
+          <Menu.Item className='investing_link' id='south_bay' onClick={this.handleClick}>WHY THE SOUTH BAY?</Menu.Item>
+        </Menu>
         <Container>
-          <Grid columns='equal'>
-            <Grid.Column width={12}>
-              {this.state.view}
-            </Grid.Column>
-            <Grid.Column>
-              <p className='investing_link' id='investing_with_us' onClick={this.handleClick}>INVESTING WITH US</p>
-              <p className='investing_link' id='our_mission' onClick={this.handleClick}>OUR MISSION</p>
-              <p className='investing_link' id='criteria' onClick={this.handleClick}>INVESTMENT CRITERIA</p>
-              <p className='investing_link' id='apartments' onClick={this.handleClick}>WHY APARTMENTS?</p>
-              <p className='investing_link' id='south_bay' onClick={this.handleClick}>WHY THE SOUTH BAY?</p>
-            </Grid.Column>
-          </Grid>
+          {this.state.view}
         </Container>
       </Segment>
     )

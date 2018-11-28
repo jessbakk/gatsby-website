@@ -1,13 +1,8 @@
 import React from 'react'
-import { Container, Grid, Icon, Segment } from 'semantic-ui-react'
+import { Grid, Icon } from 'semantic-ui-react'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 const WhyApartments = () => (
-  <Segment className="segment" vertical>
-    <Container>
-      <ScrollAnimation animateIn='fadeIn' offset={0}>
-        <h1 style={{textAlign: 'center', marginTop: '1em', marginBottom: '3em'}}>INVESTING IN APARTMENTS</h1>
-      </ScrollAnimation>
       <Grid centered columns={3}>
         <Grid.Row columns={3}>
           <Grid.Column textAlign='center'>
@@ -54,8 +49,6 @@ const WhyApartments = () => (
           </Grid.Column>
         </Grid.Row>
       </Grid>
-    </Container>
-  </Segment>
 )
 
 export default WhyApartments

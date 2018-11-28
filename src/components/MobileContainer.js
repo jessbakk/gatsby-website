@@ -45,6 +45,7 @@ class MobileContainer extends Component {
             style={{ minHeight: '100vh' }}
           >
             <Segment
+              className='full'
               inverted
               textAlign='center'
               style={{ minHeight: 350, padding: '1em 0em' }}
