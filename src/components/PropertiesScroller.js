@@ -1,5 +1,6 @@
 import React from 'react'
-import { Card, Container, Grid, Header, Modal, Placeholder, Segment } from 'semantic-ui-react'
+import { Card, Container, Grid, Header, Icon, Modal, Placeholder, Segment } from 'semantic-ui-react'
+import { Link } from 'react-scroll'
 import Slider from "react-slick";
 import ScrollAnimation from 'react-animate-on-scroll'
 
@@ -71,6 +72,11 @@ class PropertiesScroller extends React.Component {
             </Slider>
           </ScrollAnimation> 
         </Container>
+        <ScrollAnimation style={{textAlign: 'center', position: 'absolute', bottom: '0', left: '50%', margin: '2em'}} animateIn='fadeInDown' delay={500} offset={0}>
+          <Link style={{background: 'rgba(255,255,255,0)'}} to='faq' spy={true} smooth={true} duration={500}>
+            <Icon id='down-arrow-investing' size='huge' name='angle down' />
+          </Link>
+        </ScrollAnimation>
       </Segment>
        
     )

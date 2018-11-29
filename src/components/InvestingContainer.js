@@ -39,14 +39,14 @@ class InvestingContainer extends React.Component {
 
     return (
       <Segment className='full'>
-        <Menu tabular vertical style={{margin: '10em', fontSize: '1em'}}>
+        <Menu tabular vertical style={{margin: '5em', fontSize: '1em'}}>
           <Menu.Item active={activeItem === 'investing_with_us'} className='investing_link' id='investing_with_us' onClick={this.handleClick}>INVESTING WITH US</Menu.Item>
           <Menu.Item active={activeItem === 'our_mission'} className='investing_link' id='our_mission' onClick={this.handleClick}>OUR MISSION</Menu.Item>
           <Menu.Item active={activeItem === 'criteria'} className='investing_link' id='criteria' onClick={this.handleClick}>INVESTMENT CRITERIA</Menu.Item>
           <Menu.Item active={activeItem === 'apartments'} className='investing_link' id='apartments' onClick={this.handleClick}>WHY APARTMENTS?</Menu.Item>
           <Menu.Item active={activeItem === 'south_bay'} className='investing_link' id='south_bay' onClick={this.handleClick}>WHY THE SOUTH BAY?</Menu.Item>
         </Menu>
-        <Container style={{paddingRight: '10em'}}>
+        <Container style={{padding: '5em'}}>
           {this.state.view}
         </Container>
         <ScrollAnimation style={{textAlign: 'center', position: 'absolute', bottom: '0', left: '50%', margin: '2em'}} animateIn='fadeInDown' delay={500} offset={0}>
