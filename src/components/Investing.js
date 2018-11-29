@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Investing = () => (
-  <div>
+  <div style={{fontSize: '1.3em'}}>
     <h1 style={{textAlign: 'center'}}>INVESTING WITH US</h1>
     <p>Diversify your portfolio in real estate even though you don’t have the time, expertise, knowledge or capital to do it all on your own.  Expand your Net Worth with Multi-Family Properties while increasing Passive income.</p>
     <p>We are a team of real estate investors with over 50 years of combined experience in acquiring, renovating, and upgrading multi-family properties in the Los Angeles area.</p>
