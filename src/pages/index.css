@@ -46,8 +46,7 @@
   animation:blink normal 1.5s infinite ease-in-out;
 }
 
-#down-arrow-our-mission {
-  padding-top: 1em;
+#down-arrow-investing {
   -moz-transition:all 0.5s ease-in-out;
   -webkit-transition:all 0.5s ease-in-out;
   -o-transition:all 0.5s ease-in-out;
@@ -59,7 +58,7 @@
   animation:blinkB normal 1.5s infinite ease-in-out;
 }
 
-#down-arrow-our-mission:hover {
+#down-arrow-investing:hover {
   color: black;
   -moz-transition:none;
   -webkit-transition:none;
@@ -74,25 +73,25 @@
 
 @keyframes blinkB {
   0% {
-        color: rgba(0,0,0, 1)
+        color: rgba(0,0,0, .5)
   }
   50% {
-        color: rgba(0,0,0, .4)
+        color: rgba(0,0,0, .2)
   }
   100% {
-        color: rgba(0,0,0, 1)
+        color: rgba(0,0,0, .5)
   }
 }
 
 @-webkit-keyframes blinkB {
   0% {
-        color: rgba(0,0,0, 1)
+        color: rgba(0,0,0, .5)
   }
   50% {
-        color: rgba(0,0,0, .4)
+        color: rgba(0,0,0, .2)
   }
   100% {
-        color: rgba(0,0,0, 1)
+        color: rgba(0,0,0, .5)
   }
 }
 
