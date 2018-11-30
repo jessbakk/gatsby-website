@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Icon, Menu, Segment } from 'semantic-ui-react'
+import { Icon, Menu, Segment } from 'semantic-ui-react'
 import ScrollAnimation from 'react-animate-on-scroll'
 import { Link } from 'react-scroll'
 import Investing from './Investing'
@@ -46,9 +46,7 @@ class InvestingContainer extends React.Component {
           <Menu.Item active={activeItem === 'apartments'} className='investing_link' id='apartments' onClick={this.handleClick}>WHY APARTMENTS?</Menu.Item>
           <Menu.Item active={activeItem === 'south_bay'} className='investing_link' id='south_bay' onClick={this.handleClick}>WHY THE SOUTH BAY?</Menu.Item>
         </Menu>
-        <Container style={{padding: '5em'}}>
           {this.state.view}
-        </Container>
         <ScrollAnimation style={{textAlign: 'center', position: 'absolute', bottom: '0', left: '50%', margin: '2em'}} animateIn='fadeInDown' delay={500} offset={0}>
           <Link style={{background: 'rgba(255,255,255,0)'}} to='properties' spy={true} smooth={true} duration={500}>
             <Icon id='down-arrow-investing' size='huge' name='angle down' />
