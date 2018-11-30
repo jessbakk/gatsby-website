@@ -16,10 +16,11 @@ class PropertiesScroller extends React.Component {
       slidesToShow: 3,
       slidesToScroll: 1,
       arrows: true,
-      adaptiveHeight: true
+      adaptiveHeight: true,
+      draggable: true
     }
     return (
-      <Segment className='full'>
+      <Segment className='full' style={{padding: '0'}}>
         <Container>
           <ScrollAnimation animateIn='fadeIn' delay={300} offset={0}>
             <Slider {...settings}>
@@ -72,7 +73,7 @@ class PropertiesScroller extends React.Component {
             </Slider>
           </ScrollAnimation> 
         </Container>
-        <ScrollAnimation style={{textAlign: 'center', position: 'absolute', bottom: '0', left: '50%', margin: '2em'}} animateIn='fadeInDown' delay={500} offset={0}>
+        <ScrollAnimation style={{textAlign: 'center', position: 'absolute', width: '100%', bottom: '0', marginBottom: '2em'}} animateIn='fadeInDown' delay={500} offset={0}>
           <Link style={{background: 'rgba(255,255,255,0)'}} to='faq' spy={true} smooth={true} duration={500}>
             <Icon id='down-arrow-investing' size='huge' name='angle down' />
           </Link>
