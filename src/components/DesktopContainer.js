@@ -38,7 +38,7 @@ class DesktopContainer extends Component {
         >
           <Menu
             style={{backgroundColor: 'rgba(255,255,255,.8)'}}
-            fixed={'top'}
+            fixed='top'
             size='huge'
             borderless
           >
