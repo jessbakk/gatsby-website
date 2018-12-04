@@ -9,43 +9,43 @@ import {
 import ScrollAnimation from 'react-animate-on-scroll'
 
 const HomepageHeading = ({ mobile }) => (
-  <Container>
-    <ScrollAnimation animateIn="fadeIn" offset={0} animatePreScroll> 
-      <Container text> 
-        <Header
-          as='h1'
-          content='BARSHAY CAPITAL'
-          inverted
-          style={{
-            fontSize: mobile ? '2em' : '4em',
-            fontWeight: 'bolder',
-            textShadow: '4px 4px 4px rgba(255, 255, 255, .4)',
-            marginBottom: 0,
-            marginTop: mobile ? '1.5em' : '3em',
-          }}
-      />
-      </Container>
-        <Header
-          as='h2'
-          inverted
-          style={{
-            fontSize: mobile ? '1.5em' : '1.7em',
-            fontWeight: 'normal',
-            textShadow: '2px 2px 2px rgba(255, 255, 255, .5)',
-            marginTop: mobile ? '0.5em' : '1.5em',
-          }}
-        >
-          <ScrollAnimation style={{display: 'inline-block'}} animateIn="fadeIn" delay={500} offset={0} animatePreScroll>{slogan[0]}&nbsp;&nbsp;</ScrollAnimation>
-          <ScrollAnimation style={{display: 'inline-block'}} animateIn="fadeIn" delay={1500} offset={0} animatePreScroll>|&nbsp;{slogan[1]}&nbsp;&nbsp;</ScrollAnimation>
-          <ScrollAnimation style={{display: 'inline-block'}} animateIn="fadeIn" delay={2500} offset={0} animatePreScroll>|&nbsp;{slogan[2]}&nbsp;&nbsp;</ScrollAnimation>
-        </Header>
-        <ScrollAnimation animateIn="fadeInDown" delay={3500} offset={0}> 
-          <Link activeClass="active" to="investing" spy={true} smooth={true} duration={500}>
-            <Icon id='down-arrow-header' size='huge' name='angle double down' />
-          </Link>
-        </ScrollAnimation>
-    </ScrollAnimation>
-  </Container>
+    <Container>
+      <ScrollAnimation animateIn="fadeIn" offset={0} animatePreScroll> 
+        <Container text> 
+          <Header
+            as='h1'
+            content='BARSHAY CAPITAL'
+            inverted
+            style={{
+              fontSize: mobile ? '2em' : '4em',
+              fontWeight: 'bolder',
+              textShadow: '4px 4px 4px rgba(255, 255, 255, .4)',
+              marginBottom: 0,
+              marginTop: mobile ? '1.5em' : '3em',
+            }}
+        />
+        </Container>
+          <Header
+            as='h2'
+            inverted
+            style={{
+              fontSize: mobile ? '1.5em' : '1.7em',
+              fontWeight: 'normal',
+              textShadow: '2px 2px 2px rgba(255, 255, 255, .5)',
+              marginTop: mobile ? '0.5em' : '1.5em',
+            }}
+          >
+            <ScrollAnimation style={{display: 'inline-block'}} animateIn="fadeIn" delay={500} offset={0} animatePreScroll>{slogan[0]}&nbsp;&nbsp;</ScrollAnimation>
+            <ScrollAnimation style={{display: 'inline-block'}} animateIn="fadeIn" delay={1500} offset={0} animatePreScroll>|&nbsp;{slogan[1]}&nbsp;&nbsp;</ScrollAnimation>
+            <ScrollAnimation style={{display: 'inline-block'}} animateIn="fadeIn" delay={2500} offset={0} animatePreScroll>|&nbsp;{slogan[2]}&nbsp;&nbsp;</ScrollAnimation>
+          </Header>
+          <ScrollAnimation animateIn="fadeInDown" delay={3500} offset={0}> 
+            <Link activeClass="active" to="investing" spy={true} smooth={true} duration={500}>
+              <Icon id='down-arrow-header' size='huge' name='angle double down' />
+            </Link>
+          </ScrollAnimation>
+      </ScrollAnimation>
+    </Container>
 )
 
 HomepageHeading.propTypes = {

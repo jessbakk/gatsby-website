@@ -4,7 +4,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 
 const Investing = () => (
   <Container style={{padding: '5em', textAlign: 'center'}}>
-    <ScrollAnimation animateIn='fadeIn' offset={0}>
+    <ScrollAnimation animateIn='fadeIn' delay={100} offset={0}>
       <h1 style={{marginBottom: '2em'}}>INVESTING WITH US</h1>
     </ScrollAnimation>
     <Grid columns={3} style={{fontSize: '1.3em'}} divided>
