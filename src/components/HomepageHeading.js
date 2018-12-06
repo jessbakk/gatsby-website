@@ -36,10 +36,10 @@ const HomepageHeading = ({ mobile }) => (
             }}
           >
             <ScrollAnimation style={{display: 'inline-block'}} animateIn="fadeIn" delay={500} offset={0} animatePreScroll>{slogan[0]}&nbsp;&nbsp;</ScrollAnimation>
-            <ScrollAnimation style={{display: 'inline-block'}} animateIn="fadeIn" delay={1500} offset={0} animatePreScroll>|&nbsp;{slogan[1]}&nbsp;&nbsp;</ScrollAnimation>
-            <ScrollAnimation style={{display: 'inline-block'}} animateIn="fadeIn" delay={2500} offset={0} animatePreScroll>|&nbsp;{slogan[2]}&nbsp;&nbsp;</ScrollAnimation>
+            <ScrollAnimation style={{display: 'inline-block'}} animateIn="fadeIn" delay={1000} offset={0} animatePreScroll>|&nbsp;{slogan[1]}&nbsp;&nbsp;</ScrollAnimation>
+            <ScrollAnimation style={{display: 'inline-block'}} animateIn="fadeIn" delay={1500} offset={0} animatePreScroll>|&nbsp;{slogan[2]}&nbsp;&nbsp;</ScrollAnimation>
           </Header>
-          <ScrollAnimation animateIn="fadeInDown" delay={3500} offset={0}> 
+          <ScrollAnimation animateIn="fadeInDown" delay={2000} offset={0}> 
             <Link activeClass="active" to="investing" spy={true} smooth={true} duration={500}>
               <Icon id='down-arrow-header' size='huge' name='angle double down' />
             </Link>
