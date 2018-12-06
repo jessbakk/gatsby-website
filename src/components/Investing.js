@@ -19,7 +19,7 @@ const Investing = () => (
         </Grid.Column>
         <Grid.Column style={{textAlign: 'center'}}>
           <ScrollAnimation animateIn='bounceIn' offset={0} delay={300}>
-            <Icon name='certificate' size='massive'></Icon>
+            <Icon name='building' size='massive'></Icon>
           </ScrollAnimation>
           <ScrollAnimation animateIn='fadeInUp' offset={0} delay={300}>
             <p style={{textAlign: 'left', marginTop: '2em'}}>We are a team of real estate investors with over 50 years of combined experience in acquiring, renovating, and upgrading multi-family properties in the Los Angeles area.</p>
