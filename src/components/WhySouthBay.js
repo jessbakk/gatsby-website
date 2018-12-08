@@ -1,9 +1,10 @@
 import React from 'react'
 import { Container, Grid } from 'semantic-ui-react'
+import palms from '../images/palms.jpg'
 
 const WhySouthBay = () => (
   <Container style={{fontSize: '1.3em', padding: '5em'}}>
-    <Grid columns={2} style={{border: '5px solid white'}}>
+    <Grid columns={2} style={{border: '5px solid white', backgroundImage: `url(${palms})`, backgroundSize: 'cover', backgroundPosition: 'center center', backgroundAttachment: 'fixed'}}>
       <Grid.Row style={{height: '35vh', borderBottom: '5px solid white', padding: '0'}}>
         <Grid.Column className='animated fadeInDown' style={{color: 'white', borderRight: '5px solid white', padding: '0', backgroundColor: 'rgba(255,0,0,.5)', animationDuration: '.5s'}}>
           <p style={{position: 'absolute', top: '50%', transform: 'translate(0%, -50%)', textAlign: 'left', padding: '1em'}}>With the local job market and economy and the rise of tech companies relocating to the South Bay, many more young professionals are living and working in the South Bay.</p>

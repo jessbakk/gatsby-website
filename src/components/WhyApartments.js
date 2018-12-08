@@ -1,9 +1,10 @@
 import React from 'react'
 import { Container, Grid } from 'semantic-ui-react'
+import apartment from '../images/apartment.jpg'
 
 const WhyApartments = () => (
   <Container style={{fontSize: '1.3em', padding: '5em'}}>
-    <Grid columns={2} style={{border: '5px solid white'}}>
+    <Grid columns={2} style={{border: '5px solid white', backgroundImage: `url(${apartment})`, backgroundSize: 'cover', backgroundPosition: 'center center', backgroundAttachment: 'fixed'}}>
       <Grid.Row style={{height: '35vh', borderBottom: '5px solid white', padding: '0'}}>
         <Grid.Column className='animated fadeInDown' style={{color: 'white', borderRight: '5px solid white', padding: '0', backgroundColor: 'rgba(0,0,255,.5)', animationDuration: '.5s'}}>
           <p style={{position: 'absolute', top: '50%', transform: 'translate(0%, -50%)', textAlign: 'left', padding: '1em'}}>Apartments are a hedge against inflation and not enough new properties are being built to handle the increasing population.</p>
