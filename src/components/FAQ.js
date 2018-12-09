@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Accordion, Container, Icon, Segment } from 'semantic-ui-react'
+import { Link } from 'react-scroll'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 class FAQ extends Component {
@@ -132,6 +133,11 @@ class FAQ extends Component {
           </Accordion>
           </ScrollAnimation>
         </Container>
+        <ScrollAnimation style={{textAlign: 'center', position: 'absolute', width: '100%', bottom: '0', marginBottom: '2em'}} animateIn='fadeInDown' delay={500} offset={0}>
+          <Link style={{background: 'rgba(255,255,255,0)'}} to='disclaimer' spy={true} smooth={true} duration={500}>
+            <Icon id='down-arrow-investing' size='huge' name='angle down' />
+          </Link>
+        </ScrollAnimation>
       </Segment>
     )
   }

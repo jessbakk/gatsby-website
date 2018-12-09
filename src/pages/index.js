@@ -13,16 +13,18 @@ import './index.css'
 
 const HomepageLayout = () => (
   <ResponsiveContainer>
-    <Element name="investing" className="element">
+    <Element name='investing' className='element'>
       <InvestingContainer />
     </Element>
-    <Element name="properties" className="element">
+    <Element name='properties' className='element'>
       <PropertiesScroller />
     </Element>
-    <Element name="faq" className="element">
+    <Element name='faq' className='element'>
       <FAQ />
     </Element>
-    <Disclaimer />
+    <Element name='disclaimer' classname='element'>
+      <Disclaimer />
+    </Element>
   </ResponsiveContainer>
 )
 
