@@ -22,7 +22,7 @@ const HomepageLayout = () => (
     <Element name='faq' className='element'>
       <FAQ />
     </Element>
-    <Element name='disclaimer' classname='element'>
+    <Element name='disclaimer' className='element'>
       <Disclaimer />
     </Element>
   </ResponsiveContainer>
