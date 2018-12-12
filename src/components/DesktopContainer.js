@@ -37,6 +37,7 @@ class DesktopContainer extends Component {
           vertical
         >
           <Menu
+            className='animated fadeIn'
             style={{backgroundColor: 'rgba(255,255,255,.8)'}}
             fixed='top'
             size='huge'
