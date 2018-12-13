@@ -4,8 +4,8 @@ import { Button, Container, Form, Grid, Icon, Menu, Modal, TextArea } from 'sema
 const ContactForm = () => (
   <Modal size="large" trigger={
     <Menu.Item id='contact-nav' position='right'>
-      <Button primary style={{ marginLeft: '0.5em' }}>
-        CONTACT
+      <Button inverted color='red' style={{ marginLeft: '0.5em' }}>
+        Contact Us
       </Button>
     </Menu.Item>
     } closeIcon>
