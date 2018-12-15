@@ -29,20 +29,8 @@ class DesktopContainer extends Component {
     const { children } = this.props
     return (
       <Responsive minWidth={Responsive.onlyTablet.minWidth}>
-        <Segment
-          className='full'
-          inverted
-          textAlign='center'
-          style={{ minHeight: '100vh', padding: '1em 0em', backgroundImage: `url(${Background})`, backgroundSize: 'cover', backgroundPosition: 'center center', backgroundAttachment: 'fixed' }}
-          vertical
-        >
-          <Menu
-            className='animated fadeIn'
-            style={{backgroundColor: 'rgba(255,255,255,.8)'}}
-            fixed='top'
-            size='huge'
-            borderless
-          >
+        <Segment className='full' inverted textAlign='center' style={{ minHeight: '100vh', padding: '1em 0em', backgroundImage: `url(${Background})`, backgroundSize: 'cover', backgroundPosition: 'center center', backgroundAttachment: 'fixed' }} vertical>
+          <Menu className='animated fadeIn' style={{backgroundColor: 'rgba(255,255,255,.8)'}} fixed='top' size='huge' borderless>
             <Container>
               <Link onClick={this.scrollToTop} to="top"><Menu.Item >BARSHAY<Icon id='building-nav' size='large' name='building outline'/></Menu.Item></Link>
               <Link activeClass="active" to="investing"  spy={true} smooth={true} duration={500} onSetActive={this.handleSetActive}><Menu.Item>INVESTING</Menu.Item></Link>
