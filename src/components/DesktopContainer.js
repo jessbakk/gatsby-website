@@ -1,8 +1,12 @@
 import React from 'react'
 import { Component } from 'react'
 import PropTypes from 'prop-types'
-import { Link, animateScroll } from 'react-scroll'
+import { Element, Link, animateScroll } from 'react-scroll'
 import HomepageHeading from './HomepageHeading'
+import InvestingContainer from './InvestingContainer'
+import PropertiesScroller from './PropertiesScroller'
+import FAQ from './FAQ'
+import Disclaimer from './Disclaimer'
 import ContactForm from './ContactForm'
 import Background from '../images/beach.jpg'
 import {
@@ -47,6 +51,18 @@ class DesktopContainer extends Component {
           </Menu>
           <HomepageHeading />
         </Segment>
+        <Element name='investing'>
+          <InvestingContainer />
+        </Element>
+        <Element name='properties' className='element'>
+          <PropertiesScroller />
+        </Element>
+        <Element name='faq' className='element'>
+          <FAQ />
+        </Element>
+        <Element name='disclaimer' className='element'>
+          <Disclaimer />
+        </Element>
         {children}
       </Responsive>
     )
