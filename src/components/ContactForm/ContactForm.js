@@ -1,10 +1,13 @@
 import React from 'react'
 import { Button, Container, Form, Grid, Icon, Menu, Modal, TextArea } from 'semantic-ui-react'
+import styles from './ContactForm.module.css'
+
+console.log(styles)
 
 const ContactForm = () => (
   <Modal size="large" trigger={
     <Menu.Item id='contact-nav' position='right'>
-      <Button inverted color='red' style={{ marginLeft: '0.5em' }}>
+      <Button className={styles.contact} style={{marginLeft:'0.5em'}} inverted color='red'>
         Contact Us
       </Button>
     </Menu.Item>
@@ -26,7 +29,7 @@ const ContactForm = () => (
                   </Form.Group>
                   <Form.Input fluid type="email" name="Email" placeholder='Email' />
                   <TextArea autoHeight type="text" name="Message" label='Message' placeholder='Message'/>
-                  <Button style={{marginTop: '1em'}} type='submit'>Submit</Button>
+                  <Button className={styles.submit} style={{marginTop:'1em'}} type='submit'>Submit</Button>
                 </Form>
               </Grid.Column>
             </Grid.Row>

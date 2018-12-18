@@ -7,7 +7,7 @@ import InvestingContainer from './InvestingContainer'
 import PropertiesScroller from './PropertiesScroller'
 import FAQ from './FAQ'
 import Disclaimer from './Disclaimer'
-import ContactForm from './ContactForm'
+import ContactForm from './ContactForm/ContactForm'
 import Background from '../images/beach.jpg'
 import {
   Container,
